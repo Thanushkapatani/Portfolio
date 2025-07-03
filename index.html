@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Thanushka Patani</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+    <div class="logo">Thanushka Patani</div>
+    <div class="ham-menu">
+        <div class="ham-icon" onclick="togglemenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+              <li><a href="#about" onclick="togglemenu()" >About</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Project</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+   
+   
+</div>
+</nav>
+<section id="profile">
+<div class="section_pic_container"><img src="./assests/profilepic.png" alt="Thanushka's Profile Picture"/></div>
+<div class="section_text"> <p class="section_p1"> Hello, I'm </p>
+    <h1 class="title">Thanushka Patani</h1>
+    <p class="section_p2">Front End Developer</p>
+    <div class="button_container">
+        <button class="button_color" onclick="window.open('./assests/resume.pdf')">Download CV</button>
+        <button class="button_color" onclick="location.href='./#contact'"> Contact Info</button>
+
+
+    </div>
+    <div id="socials_container">
+        <img src="./assests/linkedin.png" alt="My linked in profile" class="icon" onclick="location.href='https://www.linkedin.com/in/thanushka-patani/'">
+          <img src="./assests/github.png" alt="My Github in profile" class="icon" onclick="location.href='https://github.com/Thanushkapatani'">
+    </div>
+</div>
+
+<img src="./assests/arrow.png" class="arrow" alt="Scroll to About" onclick="location.href='#about'" />
+
+
+</section>
+<section id="about">
+  <p class="section_p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+
+  <div class="about-container">
+    <div class="about-img-container">
+      <img src="./assests/aboutpic.png" alt="Profile Picture" class="about_pic">
+    </div>
+
+    <div class="about-content">
+      <div class="about-cards">
+        <div class="about-card">
+          <img src="./assests/experience.png" alt="Experience Icon" class="icon">
+          <h3>Skills</h3>
+          <p>Frontend: <br>React Js, HTML, CSS, JavaScript, Material UI </p>
+        </div>
+        <div class="about-card">
+          <img src="./assests/education.png" alt="Education Icon" class="icon">
+          <h3>Education</h3>
+          <p>B.Tech in Mechanical and Aerospace Engineering</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <p>
+          I'm an engineering student with a strong interest in frontend development. I've been learning HTML, CSS, and JavaScript to understand how websites are built and how users interact with them. Creating responsive layouts and experimenting with visual design has helped me develop both problem-solving and creative thinking skills. I'm eager to continue learning, explore modern tools like Git and React, and take on more projects that challenge and improve my abilities. This portfolio reflects my learning journey and passion for building clean, user-friendly web experiences.
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <img src="./assests/arrow.png" alt="arrow icon" class="arrow" onclick="location.href='./#projects'">
+</section>
+
+<section id="projects">
+  <p class="section_p1">Browse My Recent</p>
+  <h1 class="title"> Projects</h1>
+<div class="projects_container">
+  <div class="profile_content">
+    <div class="profile_cards">
+      <div class="profile_card">
+<img src="./assests/projectimg1.png" alt="project1" class="project_one_img">
+ <h1 class="project_one">Project One</h1>
+  <div class="button_container">
+        <button class="button_color" onclick="window.open('https://github.com/Thanushkapatani')">Github</button>
+        
+
+
+    </div>
+
+      </div>
+      <div class="profile_card">
+<img src="./assests/projectimg.png" alt="project2" class="project_img">
+ <h1 class="project_one">Project Two</h1>
+  <div class="button_container">
+        <button class="button_color" onclick="window.open('https://github.com/Thanushkapatani')">Github</button>
+        
+
+
+    </div>
+
+      </div>
+
+      <div class="profile_card">
+<img src="./assests/projectimg.png" alt="project3" class="project_img">
+ <h1 class="project_one">Project Three</h1>
+  <div class="button_container">
+        <button class="button_color" onclick="window.open('https://github.com/Thanushkapatani')">Github</button>
+        
+
+
+    </div>
+
+      </div>
+
+     
+    </div>
+
+  </div>
+</div>
+<img src="./assests/arrow.png" alt="arrow icon" class="arrow" onclick="location.href='./#contact'">
+</section>
+<section id="contact">
+  <p class="section_p1"> Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+ <div class="contact_box">
+  <div class="contact_info_container">
+    <img src="./assests/email.png" alt="Email icon" class="icon contact_icon">
+    <p><a href="mailto:thanushkapatani@gmail.com">Thanushkapatani@gmail.com</a></p>
+  </div>
+  <div class="contact_info_container">
+    <img src="./assests/linkedin.png" alt="LinkedIn icon" class="icon contact_icon">
+    <p><a href="https://www.linkedin.com/in/thanushka-patani/">LinkedIn</a></p>
+  </div>
+</div>
+
+</section>
+<footer>
+  <nav>
+    <div class="nav_links_container">
+<ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+    </div>
+  </nav>
+  <p>Copyright &#169; 2025 Thanushk Patani.All Rights Reserved</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
